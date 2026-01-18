@@ -1,0 +1,89 @@
+{%extends "plantilla.html"%}
+{% block title %}Home Catalog{% endblock %}
+{%load static%}
+
+{%block css%}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'catalog/css/styles.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'catalog/css/home.css'%}">
+<script src="{% static 'catalog/js/scroll.js'%}"></script>
+
+{%endblock%}
+
+{%block content%}
+
+
+
+
+<div class="pause-container">
+
+    <div class="container-3">
+        
+        <div class="products-list" id="1">
+        {%for x in  pecheras%}
+            {% if x.imagen %}
+                <div class="product">
+                    <div class="img-container">
+                        <a href="{%url 'orders:product_page' x.nombre x.id%}">
+                            <img src="{{ x.imagen.url }}" alt="{{ x.nombre }}" >
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        <h4>{{ x.nombre }}</h4>
+                        <p>{{ x.descripcion }}</p>
+                    </div>
+                </div>
+            {% elif  x.imagen_url %}
+                <div class="product">
+                    <a href="{%url 'orders:product_page' x.nombre x.id%}">
+                        <div class="img-container">
+                            <img src="{{ x.imagen_url }}" alt="{{ x.nombre }}">
+                        </div>
+                    </a>
+                    <div class="text">
+                        <h4>{{ x.nombre }}</h4>
+                        <p>{{ x.descripcion }}</p>
+                    </div>
+                </div>
+            
+            {% endif %}
+        {% endfor %}
+        </div>
+
+        <div class="products-list " id="2">
+        {%for x in  pecheras%}
+            {% if x.imagen %}
+                <div class="product">
+                    <a href="{%url 'orders:product_page' x.nombre x.id%}">
+                        <div class="img-container">
+                            <img src="{{ x.imagen.url }}" alt="{{ x.nombre }}" >
+                        </div>
+                    </a>
+                    <div class="text">
+                        <h4>{{ x.nombre }}</h4>
+                        <p>{{ x.descripcion }}</p>
+                    </div>
+                </div>
+            {% elif  x.imagen_url %}
+                <div class="product">
+                    <a href="{%url 'orders:product_page' x.nombre x.id%}">
+                        <div class="img-container">
+                            <img src="{{ x.imagen_url }}" alt="{{ x.nombre }}">
+                        </div>
+                    </a>
+                    <div class="text">
+                        <h4>{{ x.nombre }}</h4>
+                        <p>{{ x.descripcion }}</p>
+                    </div>
+                </div>
+            
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+<div>
+
+{%endblock%}

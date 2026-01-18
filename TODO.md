@@ -1,0 +1,3 @@
+- [x] Add z-index: 1000 to .navbar in project/static/css/styles.css
+- [x] Set z-index: 1001 for .nav_extensable-button .menu.open in project/static/css/styles.css
+- [x] Set z-index: 1000 for .nav-container in project/static/css/styles.css

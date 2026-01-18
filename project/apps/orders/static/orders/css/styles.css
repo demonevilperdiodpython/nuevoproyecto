@@ -1,0 +1,35 @@
+.container{
+    position:relative;
+    height: 500vh;
+    width: 100vw;
+    z-index: 0;
+    background-color: white;
+
+
+}
+
+.imagen-container{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+.text{
+    position:absolute;
+    left:400px;
+    top:50px;
+    width:300px;
+}
+img{
+    height: 100%; width:100%;
+    object-fit: cover;
+}
+
+.container-2{   
+    position: absolute;
+    top: 400px;
+    left: 50px;
+
+}

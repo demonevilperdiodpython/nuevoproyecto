@@ -1,0 +1,30 @@
+{%extends 'plantilla.html'%}
+{%load static%}
+{%block css%}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'orders/css/styles.css' %}">
+{%endblock%}
+{%block content%}
+    
+        
+        <div class="imagen-container">
+            {%if product.imagen%}
+                <img src="{{product.imagen.url}}" alt="{{product.nombre}}">
+            
+            {%elif product.imagen_url%}
+                <img src="{{product.imagen_url}}" alt="{{product.nombre}}">
+            {%endif%}
+        </div>
+        <div class="text">
+            <h1>{{product.nombre}}</h1>
+            <p>Precio: {{product.precio}}</p>
+            <p>Descripción: {{product.descripcion}} </p>
+        </div> 
+        <div class="container-2">
+            <button> comprar</button>
+        </div>
+    
+        
+    
+{%endblock%}
