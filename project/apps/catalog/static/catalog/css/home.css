@@ -21,8 +21,7 @@
     grid-template-rows: 300px;
     grid-auto-flow: column;
     z-index: 0;
-    animation:spin 30s infinite linear;
-    animation-play-state:paused;
+    animation:spin 5s infinite linear;
 }
 .container-3{
     display:flex;
@@ -91,11 +90,7 @@
     60%{background: linear-gradient(50deg, var(--primary-color) 40%, var(--secondary-color) 60%);}
     100%{background: linear-gradient(90deg, var(--primary-color) 40%, var(--secondary-color) 60%);}
 }
-.main h1{
-    margin-inline-start: 15rem;
-    position: relative;
-    display:inline-block;
-}
+
 .main h1:after{
     content:"";
     background: linear-gradient(90deg, var(--primary-color) 40%, var(--secondary-color) 60%);
@@ -119,19 +114,93 @@
     
     
 }  
-
-
 .main{
-    min-height:100vh;
-    border: 3px solid black;
-    background-color: GREY;
+    display:flex;
+    
+    margin: 2rem 0em;
+    justify-content: center;
+
+
 
 }
-
-.path-container {
+.main-background{
+    display:flex;
+    flex-direction: column;
+    background-image:url("../imagen/perro1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 100%;
-    background-color: blue;
-    clip-path: path("M 500 50 L 840 50  A 15,15 0,0,0 850 30L 850 20 A 30,30 0,0,1 880 0 L 1200 0 L 1200 500 L 500 500 z");
+    padding: 8%;
+    position:relative;
+    justify-content: center;
+    align-items:center;
+}
+.overlay{
+    border-image-source: linear-gradient( hsl(240 100% 50% / 0.2), hsla(293, 100%, 50%, 0.2) );
+    border-image-slice: 1 fill;
+
+    }
+    
+.main-text{
+}   
+.main-text-container{
+    
+    width:60%;
+    margin-top: 5rem;
+    
+}
+.main-text-container p{
+    margin-block-start:3rem;
+    font-size: 1.3rem;
+    color:white;
 
 }
+.main-tittle{
+    position:relative;
+
+    color:white;
+    font-size: 2.5rem;
+    
+}
+
+/* footer container*/
+footer{
+    display:flex;
+    margin: 0.5rem;
+    justify-content: space-evenly;
+    
+}
+.footer-container{
+    border-radius: 10px;
+    height: 100%;
+    
+    transition: all 0.1s ease-in-out;
+
+}
+.footer-container:hover{
+    background: var(--primary-color);
+    scale:1.1;
+    
+}
+
+.footer-container p,
+.footer-container h1{
+    margin-inline: 1rem;
+    
+
+}
+.footer-container p:hover{
+    color:var(--secondary-color);
+    scale:1.1;
+}
+
+.dual-conatiner{
+    display:flex;
+    margin:2rem;
+    justify-content: space-evenly;
+    
+}
+.dual-conatiner div{
+    height: 400px;
+}  

@@ -122,8 +122,7 @@ def eliminate_user_session_view(request, user_id):
         
         return response
 def log_in_with_user_view(request, username):
-    print("🔥 VIEW EXECUTED 🔥", request.method, username)
-    
+
     
     if request.method == 'POST':
         data = request.POST.copy()
