@@ -1,0 +1,16 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.01.19"]
+[Round "-"]
+[White "demonevildotpython"]
+[Black "313Blitzz"]
+[Result "1-0"]
+[WhiteElo "132"]
+[BlackElo "128"]
+[TimeControl "300"]
+[EndTime "0:12:03 GMT+0000"]
+[Termination "Victoria de demonevildotpython por tiempo"]
+
+1. d4 Nf6 2. Nc3 e6 3. e4 d5 4. e5 a5 5. exf6 gxf6 6. f4 f5 7. Nf3 Rg8 8. Ne5 h5
+9. Qxh5 Qf6 10. Nb5 c6 11. Nc7+ Kd8 12. Nxa8 Nd7 13. Nxf7+ Ke7 14. Nc7 Qxf7 15.
+g4 Qxh5 16. gxh5 e5 17. fxe5 b6 18. e6 c5 19. dxc5 bxc5 20. Bb5 1-0

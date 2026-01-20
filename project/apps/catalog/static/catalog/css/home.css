@@ -197,10 +197,11 @@ footer{
 
 .dual-conatiner{
     display:flex;
-    margin:2rem;
+    margin:orem;
     justify-content: space-evenly;
     
 }
 .dual-conatiner div{
-    height: 400px;
+    height: 80vh;
+    border: 2px solid black;
 }  
